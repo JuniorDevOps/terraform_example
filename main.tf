@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   user_data = file("userdata.sh")
   count = 2
   tags = {
-    Name = "Server-${count.index + 1}"
+    Name = "Merver-${count.index + 1}"
   }
 }
 
