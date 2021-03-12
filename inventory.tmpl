@@ -1,0 +1,4 @@
+[servers]
+%{ for index, ip in public-ip ~}
+${ip} ansible_host=${public-ip[index]}
+%{ endfor ~}
