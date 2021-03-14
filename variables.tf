@@ -1,13 +1,21 @@
 variable "ami_id" {
-  default="ami-0767046d1677be5a0"
+  default = "ami-0767046d1677be5a0"
 }
 
 variable "region" {
-  default="eu-central-1"
+  default = "eu-central-1"
 }
 
 variable "instance_type" {
-  default="t2.micro"
+  default = "t2.micro"
+}
+
+variable "count_stage" {
+  default = 2
+}
+
+variable "count_prod" {
+  default = 2
 }
 
 variable "key_name" {
@@ -17,3 +25,8 @@ variable "key_name" {
 variable "aws_security_group" {
   default = "launch-wizard-7"
 }
+
+
+
+
+

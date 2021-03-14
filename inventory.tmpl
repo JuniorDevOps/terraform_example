@@ -1,6 +1,6 @@
 [staging]
-%{ for index, ip in public-ip ~}
-${ip} ansible_host=${public-ip[index]}
+%{ for index, ip in stage-ip ~}
+${ip} ansible_host=${stage-ip[index]}
 %{ endfor ~}
 
 [production]
