@@ -10,7 +10,7 @@ resource "aws_instance" "stage" {
   user_data = file("servers_data.sh")
   count = 2
   tags = {
-    Name = "Stage-${count.index + 1}"
+    Name = "Shmage-${count.index + 1}"
   }
 }
 
